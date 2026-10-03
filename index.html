@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Nav</title>
+    <style>
+        /* CSS Reset Dasar */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        /* Container Navigasi */
+        nav {
+            background-color: #eeeeee;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px 30px;
+            color: #333333;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Menu Aktif (HOME) */
+        nav ul li a.active {
+            background-color: #3caea3;
+            color: #ffffff;
+        }
+
+        /* Efek Hover (seperti pada menu SERVICE) */
+        nav ul li a:hover {
+            background-color: #505050;
+            color: #ffffff;
+            border-bottom: 4px solid #3caea3;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
